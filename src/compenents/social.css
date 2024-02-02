@@ -56,11 +56,6 @@
   transition: outline 0.2s;
   outline: transparent var(--size-1) solid;
 }
-.twitter{
-	transform: scale(0.3);
-	padding: 0;
-	margin: 0;
-}
 
 :is(.block:hover, .block:focus-visible) .block__item {
 	outline: var(--surface-1) var(--size-1) solid;
