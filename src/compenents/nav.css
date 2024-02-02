@@ -1,0 +1,57 @@
+.maindiv {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-evenly;
+    position: absolute;
+    right: 0;
+    top: 0;
+    align-items: center;
+    margin: 0%;
+    padding: 0;
+    
+  }
+  
+  li {
+    transform: rotate(90deg);
+    margin: 0;
+    padding: 4rem;
+    color: #FFF;
+    text-align: center;
+    font-family: poppins;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 1.32px;
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+  }
+  
+  ul {
+    justify-content: space-between;
+  }
+  
+  .Name {
+    margin: 0;
+    position: absolute;
+    right: 0;
+    padding-right: 4rem;
+    top: 4rem;
+    width: 300px;
+  }
+  
+  .bara, .chota {
+    color: #FF2B51;
+    text-align: right;
+    font-family: Poppins;
+    font-size: 40px;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 2.2px;
+  }
+  
+  li:hover {
+    cursor: pointer;
+    transform: rotate(90deg) scale(1.2); /* Increase the size by 20% on hover */
+  }
+  

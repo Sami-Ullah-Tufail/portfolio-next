@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgb(var(--background-end-rgb))
+  ) rgb(var(--background-start-rgb));
+  background-image: url('../assets/Ellipse1.svg');
+  background-repeat: no-repeat; /* Add no-repeat */
+  background-position: center center; 
+  background-size: 30vw; /* Ensure the image covers the entire background */
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+
+.maindiv{
+  display: flex;
+  flex-direction: column;
+}
+.verticalmaker{
+  display: flex;
+  flex-direction: row;
+}
+
+
+.vertical-maker {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.first-block {
+  flex-grow: 1;
+  width: 90%; /* Take up 90% of the width */
+  height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    overflow: hidden;
+
+  
+    
+}
+.homemain{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end; /* Align content at the bottom of the container */
+    height: 100vh;
+}
+
+.pic3 {
+    margin: 0;
+    position: absolute;
+    left: 0;
+    /* padding-left: 4rem; */
+    top: 4rem;
+    width: 300px;
+}
+.pic2{
+  margin: 0;
+    position: absolute;
+    left: 0;
+    padding-left: 4rem;
+    bottom: 4rem;
+    width: 300px;
+}
+.vertical-social{
+display: flex;
+flex-direction: row;
+position: absolute;
+bottom: 5rem;
+right: 5rem;
+height: auto;
+width: max-content;
+align-items: center;
+justify-content: space-between;
+}
